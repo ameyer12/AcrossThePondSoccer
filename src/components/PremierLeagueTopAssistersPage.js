@@ -1,24 +1,15 @@
-// import React, { useState, useEffect } from 'react';
-import "./TopScorersPage.css"
-import { Dropdown } from "bootstrap"
+import React from 'react';
+import "./PremierLeagueTopAssistersPage.css"
 
+  
 
-const TopScorersPage = ( { topScorers, fetchTopScorers, event }) => {
+const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
     try {
-        
-        // for( let i = 0; i < topScorers.response.length; i++) {
-            // console.log(topScorers.response[i].statistics[0].team.name)
-        // }
-        
-        // console.log(topScorers.response.map(() => {
-        //     console.log(topScorers.response)
-        // }))
-        // console.log(topScorers.response.map(() => { console.log(topScorers.response)}))
         return (
-            <div>
-                <h1>{topScorers.parameters.season} Premier League Top Scorers:</h1>
+                <div>
+                    <h1>{topAssisters.parameters.season} Premier League Top Assisters:</h1>
                 <div> {
-                    topScorers.response.map((currentItem, index) => { 
+                    topAssisters.response.map((currentItem, index) => { 
                         return <li className="card" key={index}>
                                     <p>
                                         <img className="player-image" src={currentItem.player.photo} alt="player" height="100" width="100"/> 
@@ -29,7 +20,7 @@ const TopScorersPage = ( { topScorers, fetchTopScorers, event }) => {
                                         {currentItem.statistics[0].team.name}
                                     </p>
                                     <p>
-                                    Goal Count: {currentItem.statistics[0].goals.total}
+                                    Assist Count: {currentItem.statistics[0].goals.assists}
                                     </p>
                                     <button type="button" className="btn btn-primary">View Player Stats</button>
                                 </li>
@@ -41,6 +32,6 @@ const TopScorersPage = ( { topScorers, fetchTopScorers, event }) => {
         console.log(error)
     }
     
-  }
-  
-  export default TopScorersPage
+}
+
+export default PremierLeagueTopAssistersPage

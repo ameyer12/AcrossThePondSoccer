@@ -1,15 +1,24 @@
-import React from 'react';
-import "./TopAssistersPage.css"
+// import React, { useState, useEffect } from 'react';
+import "./PremierLeagueTopScorersPage.css"
+import { Dropdown } from "bootstrap"
 
-  
 
-const TopAssistersPage = ( { topAssisters, fetchTopAssisters, event }) => {
+const PremierLeagueTopScorersPage = ( { topScorers }) => {
     try {
+        
+        // for( let i = 0; i < topScorers.response.length; i++) {
+            // console.log(topScorers.response[i].statistics[0].team.name)
+        // }
+        
+        // console.log(topScorers.response.map(() => {
+        //     console.log(topScorers.response)
+        // }))
+        // console.log(topScorers.response.map(() => { console.log(topScorers.response)}))
         return (
-                <div>
-                    <h1>{topAssisters.parameters.season} Premier League Top Scorers:</h1>
+            <div>
+                <h1>{topScorers.parameters.season} Premier League Top Scorers:</h1>
                 <div> {
-                    topAssisters.response.map((currentItem, index) => { 
+                    topScorers.response.map((currentItem, index) => { 
                         return <li className="card" key={index}>
                                     <p>
                                         <img className="player-image" src={currentItem.player.photo} alt="player" height="100" width="100"/> 
@@ -20,7 +29,7 @@ const TopAssistersPage = ( { topAssisters, fetchTopAssisters, event }) => {
                                         {currentItem.statistics[0].team.name}
                                     </p>
                                     <p>
-                                    Assist Count: {currentItem.statistics[0].goals.assists}
+                                    Goal Count: {currentItem.statistics[0].goals.total}
                                     </p>
                                     <button type="button" className="btn btn-primary">View Player Stats</button>
                                 </li>
@@ -32,6 +41,6 @@ const TopAssistersPage = ( { topAssisters, fetchTopAssisters, event }) => {
         console.log(error)
     }
     
-}
-
-export default TopAssistersPage
+  }
+  
+  export default PremierLeagueTopScorersPage

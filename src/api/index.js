@@ -33,7 +33,7 @@ export const getPremierLeagueTopScorers = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
+        console.log(results)
         
         return results
     } catch (error) {

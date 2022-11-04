@@ -49,15 +49,17 @@ const Home = ({liveScores}) => {
 
                                                         <p className='homepage-league-name'>{currentItem.league.country}</p>
 
-                                                        <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
+                                                        <div className='live-score-container'>
+                                                            <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
 
-                                                        {currentItem.teams.home.name} 
+                                                            <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
 
-                                                        <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span>
+                                                            <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span>
 
-                                                        {currentItem.teams.away.name}
+                                                            <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
 
-                                                        <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                            <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                        </div>
                                                     </p>
                                                 </div>
                                         } else if(index === 0 && currentItem.score.fulltime.home !== null && currentItem.score.fulltime.away !== null){
@@ -68,15 +70,18 @@ const Home = ({liveScores}) => {
 
                                                             <p className='homepage-league-name'>{currentItem.league.country}</p>
 
-                                                            <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
+                                                            <div className='live-score-container'>
+                                                                <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
 
-                                                            {currentItem.teams.home.name} 
-                                                            
-                                                            <span className="homepage-score"> {currentItem.score.fulltime.home} : {currentItem.score.fulltime.away} </span> 
-                                                            
-                                                            {currentItem.teams.away.name}
-                                                            
-                                                            <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                                <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
+                                                                
+                                                                <span className="homepage-score"> {currentItem.score.fulltime.home} : {currentItem.score.fulltime.away} </span> 
+                                                                
+                                                                <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
+                                                                
+                                                                <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                            </div>
+
                                                             </p>
                                                     </div>   
                                         }
@@ -88,19 +93,21 @@ const Home = ({liveScores}) => {
                                         return <div class="carousel-item" key={index}>
                                                     <p className="card border-0">
 
-                                                    <p className='homepage-league-name'>{currentItem.league.name}</p>
+                                                        <p className='homepage-league-name'>{currentItem.league.name}</p>
 
-                                                    <p className='homepage-league-name'>{currentItem.league.country}</p>
+                                                        <p className='homepage-league-name'>{currentItem.league.country}</p>
 
-                                                    <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
-                                                    
-                                                    {currentItem.teams.home.name} 
+                                                        <div className='live-score-container'>
+                                                            <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
 
-                                                    <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span> 
+                                                            <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
 
-                                                    {currentItem.teams.away.name}
+                                                            <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span>
 
-                                                    <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                            <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
+
+                                                            <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                        </div>
                                                     </p>
                                                 </div>
                                     } else if(index === 0 && currentItem.score.fulltime.home !== null && currentItem.score.fulltime.away !== null){
@@ -111,16 +118,18 @@ const Home = ({liveScores}) => {
 
                                                         <p className='homepage-league-name'>{currentItem.league.country}</p>
 
-                                                        <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
+                                                        <div className='live-score-container'>
+                                                            <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
 
-                                                        {currentItem.teams.home.name} 
-                                                        
-                                                        <span className="homepage-score"> {currentItem.score.fulltime.home} : {currentItem.score.fulltime.away} </span> 
-                                                        
-                                                        {currentItem.teams.away.name}
+                                                            <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
+                                                            
+                                                            <span className="homepage-score"> {currentItem.score.fulltime.home} : {currentItem.score.fulltime.away} </span> 
+                                                            
+                                                            <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
 
-                                                         <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
-                                                        </p>
+                                                            <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                        </div>
+                                                    </p>
                                                 </div>
                                     }
                             })
@@ -143,4 +152,3 @@ const Home = ({liveScores}) => {
 }
 
 export default Home
-

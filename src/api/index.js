@@ -27,7 +27,7 @@ export const getLiveScores = async () => {
         {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             }
@@ -49,7 +49,7 @@ export const getPremierLeagueTopScorers = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -70,7 +70,7 @@ export const getPremierLeagueTopAssisters = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -91,7 +91,7 @@ export const getLaLigaTopScorers = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -112,7 +112,7 @@ export const getLaLigaTopAssisters = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -133,7 +133,7 @@ export const getBundesligaTopScorers = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -154,7 +154,7 @@ export const getBundesligaTopAssisters = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -175,7 +175,7 @@ export const getSerieATopScorers = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -196,7 +196,7 @@ export const getSerieATopAssisters = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -217,7 +217,7 @@ export const getLigue1TopScorers = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 
@@ -238,7 +238,7 @@ export const getLigue1TopAssisters = async () => {
             {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '0c59b2f3ebmsh3c13f6b4fc1865fp100b8ajsnaebdba8feddc',
+                'X-RapidAPI-Key': process.env.REACT_APP_RAPID_API_KEY,
                 'X-RapidAPI-Host': 'api-football-v1.p.rapidapi.com'
                 }
             } 

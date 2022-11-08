@@ -13,4 +13,3 @@ export {default as Ligue1TopAssistersPage } from "./Ligue1TopAssistersPage"
 
 
 
-

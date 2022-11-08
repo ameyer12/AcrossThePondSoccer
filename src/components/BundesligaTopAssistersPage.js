@@ -1,13 +1,13 @@
 import React from 'react';
-import "./PremierLeagueTopAssistersPage.css"
+import "./BundesligaTopAssistersPage.css"
 
-const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
+const BundesligaTopAssistersPage = ( { topAssistersBundesliga }) => {
     try {
         return (
                 <div>
-                    <h1>{topAssisters.parameters.season} Premier League Top Assisters:</h1>
+                    <h1>{topAssistersBundesliga.parameters.season} Bundesliga Top Assisters:</h1>
                 <div> {
-                    topAssisters.response.map((currentItem, index) => { 
+                    topAssistersBundesliga.response.map((currentItem, index) => { 
                         return <li className="card" key={index}>
                                     <p>
                                         <img className="player-image" src={currentItem.player.photo} alt="player" height="100" width="100"/> 
@@ -32,4 +32,4 @@ const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
     
 }
 
-export default PremierLeagueTopAssistersPage
+export default BundesligaTopAssistersPage

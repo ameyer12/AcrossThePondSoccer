@@ -1,13 +1,13 @@
-import React from 'react';
-import "./PremierLeagueTopAssistersPage.css"
+import "./BundesligaTopScorersPage.css"
+import { Dropdown } from "bootstrap"
 
-const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
+const BundesligaTopScorersPage = ( { topScorersBundesliga }) => {
     try {
         return (
-                <div>
-                    <h1>{topAssisters.parameters.season} Premier League Top Assisters:</h1>
+            <div>
+                <h1>{topScorersBundesliga.parameters.season} Bundesliga Top Scorers:</h1>
                 <div> {
-                    topAssisters.response.map((currentItem, index) => { 
+                    topScorersBundesliga.response.map((currentItem, index) => { 
                         return <li className="card" key={index}>
                                     <p>
                                         <img className="player-image" src={currentItem.player.photo} alt="player" height="100" width="100"/> 
@@ -18,7 +18,7 @@ const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
                                         {currentItem.statistics[0].team.name}
                                     </p>
                                     <p>
-                                    Assist Count: {currentItem.statistics[0].goals.assists}
+                                    Goal Count: {currentItem.statistics[0].goals.total}
                                     </p>
                                     <button type="button" className="btn btn-primary">View Player Stats</button>
                                 </li>
@@ -30,6 +30,6 @@ const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
         console.log(error)
     }
     
-}
-
-export default PremierLeagueTopAssistersPage
+  }
+  
+  export default BundesligaTopScorersPage

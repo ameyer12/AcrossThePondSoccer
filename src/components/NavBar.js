@@ -23,9 +23,9 @@ const NavBar = () => {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a className="dropdown-item" href="/pltopscorers">Premier League</a></li>
             <li><a className="dropdown-item" href="/laligatopscorers">La Liga</a></li>
-            <li><a className="dropdown-item" href="#">Bundesliga</a></li>
-            <li><a className="dropdown-item" href="#">Serie A</a></li>
-            <li><a className="dropdown-item" href="#">Ligue 1</a></li>
+            <li><a className="dropdown-item" href="/bundesligatopscorers">Bundesliga</a></li>
+            <li><a className="dropdown-item" href="/serieatopscorers">Serie A</a></li>
+            <li><a className="dropdown-item" href="/ligue1topscorers">Ligue 1</a></li>
           </ul>
         </li>
         <li className="nav-item dropdown">
@@ -35,9 +35,9 @@ const NavBar = () => {
           <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <li><a className="dropdown-item" href="/pltopassisters">Premier League</a></li>
             <li><a className="dropdown-item" href="/laligatopassisters">La Liga</a></li>
-            <li><a className="dropdown-item" href="#">Bundesliga</a></li>
-            <li><a className="dropdown-item" href="#">Serie A</a></li>
-            <li><a className="dropdown-item" href="#">Ligue 1</a></li>
+            <li><a className="dropdown-item" href="/bundesligatopassisters">Bundesliga</a></li>
+            <li><a className="dropdown-item" href="/serieatopassisters">Serie A</a></li>
+            <li><a className="dropdown-item" href="/ligue1topassisters">Ligue 1</a></li>
           </ul>
         </li>
       </ul>

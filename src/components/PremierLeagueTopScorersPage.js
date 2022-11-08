@@ -1,7 +1,5 @@
-// import React, { useState, useEffect } from 'react';
 import "./PremierLeagueTopScorersPage.css"
 import { Dropdown } from "bootstrap"
-
 
 const PremierLeagueTopScorersPage = ( { topScorers }) => {
     try {

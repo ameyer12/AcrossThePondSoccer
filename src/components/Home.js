@@ -4,17 +4,6 @@ import { Typewriter } from 'react-simple-typewriter';
 import './Home.css';
 
 const Home = ({liveScores}) => {
-
-    // console.log(liveScores.response)
-
-        // for(let i = 0; i < liveScores.response.length; i++) {
-
-        //     if(i === 0){
-        //         console.log(liveScores.response[i])
-        //     }
-        // }
-
-
     try{
         return (
             <div className="homepage">
@@ -42,26 +31,25 @@ const Home = ({liveScores}) => {
                         { 
                                     liveScores.response.map((currentItem, index) => { 
                                         if(index === 0 && currentItem.score.fulltime.home === null && currentItem.score.fulltime.away === null){
-                                            console.log(currentItem.league.name)
-                                        return  <div class="carousel-item active" key={index}>
-                                                    <p className="card border-0">
-                                                        <p className='homepage-league-name'>{currentItem.league.name}</p>
+                                            return  <div class="carousel-item active" key={index}>
+                                                        <p className="card border-0">
+                                                            <p className='homepage-league-name'>{currentItem.league.name}</p>
 
-                                                        <p className='homepage-league-name'>{currentItem.league.country}</p>
+                                                            <p className='homepage-league-name'>{currentItem.league.country}</p>
 
-                                                        <div className='live-score-container'>
-                                                            <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
+                                                            <div className='live-score-container'>
+                                                                <img className="homepage-team-logo" src={currentItem.teams.home.logo} alt="player" height="100" width="100"/>
 
-                                                            <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
+                                                                <p className='homepage-home-team-name'>{currentItem.teams.home.name}</p>
 
-                                                            <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span>
+                                                                <span className="homepage-score"> {currentItem.score.halftime.home} : {currentItem.score.halftime.away} </span>
 
-                                                            <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
+                                                                <p className='homepage-away-team-name'>{currentItem.teams.away.name}</p>
 
-                                                            <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
-                                                        </div>
-                                                    </p>
-                                                </div>
+                                                                <img className="homepage-team-logo" src={currentItem.teams.away.logo} alt="player" height="100" width="100"/> 
+                                                            </div>
+                                                        </p>
+                                                    </div>
                                         } else if(index === 0 && currentItem.score.fulltime.home !== null && currentItem.score.fulltime.away !== null){
                                             return  <div class="carousel-item active" key={index}>
                                                         <p className="card">

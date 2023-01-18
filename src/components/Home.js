@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
-// import 'react-simple-typewriter/dist/index.css';
+// import homeBackground from './home-background.png';
 import './Home.css';
 
-const Home = ({liveScores}) => {
+const Home = ({liveScores, fetchLiveScores}) => {
     try{
+
+        useEffect(() => {
+            fetchLiveScores()
+          }, [])
+        
         return (
             <div className="homepage">
                 <div className="homepage-header">

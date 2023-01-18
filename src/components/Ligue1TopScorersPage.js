@@ -1,9 +1,14 @@
+import { useEffect } from "react"
 import "./Ligue1TopAssistersPage.css"
 import { Dropdown } from "bootstrap"
 
-const Ligue1TopScorersPage = ( { topScorersLigue1 }) => {
+const Ligue1TopScorersPage = ( { topScorersLigue1, fetchLigue1TopScorers }) => {
     try {
-        console.log(topScorersLigue1)
+          
+        useEffect(() => {
+            fetchLigue1TopScorers()
+        }, [])
+
         return (
             <div>
                 <h1>{topScorersLigue1.parameters.season} Ligue 1 Top Scorers:</h1>

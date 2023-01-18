@@ -1,3 +1,7 @@
 .container-fluid {
     margin-right: 1.5%;
 }
+
+.dropdown-menu {
+    margin-left: -10%;
+}

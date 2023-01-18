@@ -51,125 +51,80 @@ const App = () => {
 
   async function fetchLiveScores() {
     const results = await getLiveScores()
-    // console.log(results)
+
     setLiveScores(results)
-    // console.log(liveScores)
+
   }
 
 
   async function fetchPremierLeagueTopScorers() {
     const results = await getPremierLeagueTopScorers()
-    // console.log(results)
+
     setTopScorers(results)
-    // console.log(topScorers)
+
   }
 
   async function fetchPremierLeagueTopAssisters() {
     const results = await getPremierLeagueTopAssisters()
-    // console.log(results)
+
     setTopAssisters(results)
   }
 
   async function fetchLaLigaTopScorers() {
     const results = await getLaLigaTopScorers()
-    // console.log(results)
+
     setTopScorersLaLiga(results)
-    // console.log(topScorers)
+    
   }
 
   async function fetchLaLigaTopAssisters() {
     const results = await getLaLigaTopAssisters()
-    // console.log(results)
+
     setTopAssistersLaLiga(results)
-    // console.log(topScorers)
+   
   }
 
   async function fetchBundesligaTopScorers() {
     const results = await getBundesligaTopScorers()
-    // console.log(results)
+
     setTopScorersBundesliga(results)
-    // console.log(topScorers)
+    
   }
 
   async function fetchBundesligaTopAssisters() {
     const results = await getBundesligaTopAssisters()
-    // console.log(results)
+
     setTopAssistersBundesliga(results)
-    // console.log(topScorers)
+ 
   }
 
   async function fetchSerieATopScorers() {
     const results = await getSerieATopScorers()
-    // console.log(results)
+
     setTopScorersSerieA(results)
-    // console.log(topScorers)
+
   }
 
   async function fetchSerieATopAssisters() {
     const results = await getSerieATopAssisters()
-    // console.log(results)
+
     setTopAssistersSerieA(results)
-    // console.log(topScorers)
+    
   }
 
   async function fetchLigue1TopScorers() {
     const results = await getLigue1TopScorers()
-    // console.log(results)
+
     setTopScorersLigue1(results)
-    // console.log(topScorers)
+  
   }
 
 
   async function fetchLigue1TopAssisters() {
     const results = await getLigue1TopAssisters()
-    // console.log(results)
+
     setTopAssistersLigue1(results)
-    // console.log(topScorers)
   }
-
-  useEffect(() => {
-    fetchLiveScores()
-  }, [])
-
-  useEffect(() => {
-    fetchPremierLeagueTopScorers()
-  }, [])
-  
-  useEffect(() => {
-    fetchPremierLeagueTopAssisters()
-  }, [])
-  
-  useEffect(() => {
-    fetchLaLigaTopScorers()
-  }, [])
-
-  useEffect(() => {
-    fetchLaLigaTopAssisters()
-  }, [])
-
-  useEffect(() => {
-    fetchBundesligaTopScorers()
-  }, [])
-
-  useEffect(() => {
-    fetchBundesligaTopAssisters()
-  }, [])
-
-  useEffect(() => {
-    fetchSerieATopScorers()
-  }, [])
-
-  useEffect(() => {
-    fetchSerieATopAssisters()
-  }, [])
-
-  useEffect(() => {
-    fetchLigue1TopScorers()
-  }, [])
-
-  useEffect(() => {
-    fetchLigue1TopAssisters()
-  }, [])
 
   return (
     <div>

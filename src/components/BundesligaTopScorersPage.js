@@ -1,8 +1,14 @@
+import { useEffect } from "react"
 import "./BundesligaTopScorersPage.css"
 import { Dropdown } from "bootstrap"
 
-const BundesligaTopScorersPage = ( { topScorersBundesliga }) => {
+const BundesligaTopScorersPage = ( { topScorersBundesliga, fetchBundesligaTopScorers }) => {
     try {
+
+        useEffect(() => {
+            fetchBundesligaTopScorers()
+        }, [])
+
         return (
             <div>
                 <h1>{topScorersBundesliga.parameters.season} Bundesliga Top Scorers:</h1>

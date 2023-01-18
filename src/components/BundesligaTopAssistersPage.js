@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./BundesligaTopAssistersPage.css"
 
-const BundesligaTopAssistersPage = ( { topAssistersBundesliga }) => {
+const BundesligaTopAssistersPage = ( { topAssistersBundesliga, fetchBundesligaTopAssisters }) => {
     try {
+
+         useEffect(() => {
+            fetchBundesligaTopAssisters()
+        }, [])
+
         return (
                 <div>
                     <h1>{topAssistersBundesliga.parameters.season} Bundesliga Top Assisters:</h1>

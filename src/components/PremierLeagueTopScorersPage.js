@@ -1,7 +1,7 @@
+import { useEffect } from "react"
 import "./PremierLeagueTopScorersPage.css"
-import { Dropdown } from "bootstrap"
 
-const PremierLeagueTopScorersPage = ( { topScorers }) => {
+const PremierLeagueTopScorersPage = ( { topScorers, fetchPremierLeagueTopScorers }) => {
     try {
         
         // for( let i = 0; i < topScorers.response.length; i++) {
@@ -12,6 +12,11 @@ const PremierLeagueTopScorersPage = ( { topScorers }) => {
         //     console.log(topScorers.response)
         // }))
         // console.log(topScorers.response.map(() => { console.log(topScorers.response)}))
+
+        useEffect(() => {
+            fetchPremierLeagueTopScorers()
+          }, [])
+
         return (
             <div>
                 <h1>{topScorers.parameters.season} Premier League Top Scorers:</h1>

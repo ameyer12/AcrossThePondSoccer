@@ -1,7 +1,13 @@
+import { useEffect } from 'react';
 import React from 'react';
 import "./PremierLeagueTopAssistersPage.css"
 
-const PremierLeagueTopAssistersPage = ( { topAssisters }) => {
+const PremierLeagueTopAssistersPage = ( { topAssisters, fetchPremierLeagueTopAssisters }) => {
+
+    useEffect(() => {
+        fetchPremierLeagueTopAssisters()
+      }, [])
+
     try {
         return (
                 <div>

@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./LaLigaTopScorersPage.css"
 
-const LaLigaTopScorersPage = ({ topScorersLaLiga }) => {
+const LaLigaTopScorersPage = ({ topScorersLaLiga, fetchLaLigaTopScorers }) => {
+
+   useEffect(() => {
+    fetchLaLigaTopScorers()
+  }, [])
 
   try{ 
     return(

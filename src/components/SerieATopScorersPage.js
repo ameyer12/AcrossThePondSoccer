@@ -1,8 +1,14 @@
+import { useEffect } from "react"
 import "./SerieATopScorersPage.css"
 import { Dropdown } from "bootstrap"
 
-const SerieATopScorersPage = ( { topScorersSerieA }) => {
+const SerieATopScorersPage = ( { topScorersSerieA, fetchSerieATopScorers }) => {
     try {
+
+        useEffect(() => {
+            fetchSerieATopScorers()
+        }, [])
+
         return (
             <div>
                 <h1>{topScorersSerieA.parameters.season} Serie A Top Scorers:</h1>

@@ -1,13 +1,12 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
-// import { Navbar } from 'react-bootstrap';
+import logoImage from './logo.png';
 import "./Navbar.css";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-xl navbar-light bg-light">
     <div className="container-fluid">
-      <a className="navbar-brand navbar" href="/">Across the Pond Soccer</a>
+      <a href="/"><img src={logoImage} alt="HTML tutorial" width={75} height={75}/></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarWithDropdown" aria-controls="navbarWithDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
       </button>

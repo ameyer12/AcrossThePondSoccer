@@ -3,5 +3,13 @@
 }
 
 .dropdown-menu {
-    margin-left: -10%;
+    margin-left: -25%;
+}
+
+.nav-link {
+    font-size: 16pt;
+}
+
+.dropdown-item {
+    font-size: 14pt;
 }

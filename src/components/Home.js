@@ -29,7 +29,7 @@ const Home = ({liveScores, fetchLiveScores}) => {
                     </p>
                 </div>
                 <div className="live-scores-header">
-                    <h2>Live scores:</h2>
+                    <h2 id="live-scores-h2">Live scores:</h2>
                 </div>
                 <div id="carouselWithControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">

@@ -1,0 +1,20 @@
+.ligue1TopAssisters-table {
+    margin-left: 1%;
+    font-size: 18pt;
+}
+
+.ligue1TopAssisters-h1 {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+#ligue1TopAssisters-assist-count{
+    font-size: 19pt;
+}
+
+#ligue1TopAssisters-player-ranking {
+    padding-left: 1.3%;
+    font-size: 19pt;
+}

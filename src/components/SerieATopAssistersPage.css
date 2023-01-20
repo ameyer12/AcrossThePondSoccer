@@ -1,0 +1,20 @@
+.serieATopAssisters-table {
+    margin-left: 1%;
+    font-size: 18pt;
+}
+
+.serieATopAssisters-h1 {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+#serieATopAssisters-assist-count{
+    font-size: 19pt;
+}
+
+#serieATopAssisters-player-ranking {
+    padding-left: 1.3%;
+    font-size: 19pt;
+}

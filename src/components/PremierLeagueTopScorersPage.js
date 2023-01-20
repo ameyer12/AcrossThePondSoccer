@@ -37,7 +37,7 @@ const PremierLeagueTopScorersPage = ( { topScorers, fetchPremierLeagueTopScorers
                                             <img className="player-image" src={currentItem.player.photo} alt="player" height="75" width="75"/> 
                                             {currentItem.player.name}
                                         </td>
-                                        <td id="premierLeagueTopScorers-club" width={445}>
+                                        <td id="premierLeagueTopScorers-club" width={441}>
                                             <img className="team-logo-image" src={currentItem.statistics[0].team.logo} alt="team logo" height="50" width="50"/>
                                             {currentItem.statistics[0].team.name}
                                         </td>

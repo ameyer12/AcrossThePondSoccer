@@ -128,3 +128,22 @@ html, body {
         font-size: 30pt;
     }
 }
+
+
+@media screen and (max-width: 400px){
+
+    .homepage-home-team-name {
+        margin-top: 4%;
+        margin-right: 13%;
+    }
+    
+    .homepage-away-team-name {
+        margin-top: 4%;
+        margin-left: 13%;
+    }
+
+    .homepage-team-logo {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}

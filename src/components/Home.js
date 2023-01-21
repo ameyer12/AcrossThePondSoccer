@@ -14,7 +14,7 @@ const Home = ({liveScores, fetchLiveScores}) => {
             <div className="homepage">
                 <div className="homepage-header">
                     <h1 className="homepage-h1"> Welcome to Across the Pond Soccer!</h1>
-                    <p>Europe's best
+                    <p id="homepage-typewriter-p">Europe's best
                         <span>
                             <Typewriter 
                                 loop

@@ -116,3 +116,14 @@ html, body {
 #live-scores-h2 {
     font-size: 30pt;
 }
+
+@media screen and (max-width: 660px){
+
+    .homepage-h1 {
+        font-size: 30pt;
+    }
+
+    #homepage-typewriter-p{
+        font-size: 30pt;
+    }
+}

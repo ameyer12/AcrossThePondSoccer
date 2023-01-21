@@ -32,7 +32,6 @@ export const getPremierLeagueTopScorers = async () => {
         );
 
         const results = await response.json();
-        console.log(results)
         
         return results
     } catch (error) {
@@ -53,7 +52,6 @@ export const getPremierLeagueTopAssisters = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
     
         return results
     } catch (error) {
@@ -74,7 +72,6 @@ export const getLaLigaTopScorers = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -95,7 +92,6 @@ export const getLaLigaTopAssisters = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -116,7 +112,6 @@ export const getBundesligaTopScorers = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -137,7 +132,6 @@ export const getBundesligaTopAssisters = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -158,7 +152,6 @@ export const getSerieATopScorers = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -179,7 +172,6 @@ export const getSerieATopAssisters = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -200,7 +192,6 @@ export const getLigue1TopScorers = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {
@@ -221,7 +212,6 @@ export const getLigue1TopAssisters = async () => {
         );
 
         const results = await response.json();
-        // console.log(results)
         
         return results
     } catch (error) {

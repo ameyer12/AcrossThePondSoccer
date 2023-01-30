@@ -9,7 +9,6 @@
 html, body {
     width: 100%;
     height: 100%;
-    /* background-color: #282828; */
   }
 
 .homepage {
@@ -19,7 +18,6 @@ html, body {
 .homepage-header {
       color: #EDF5E1; 
       background: linear-gradient(-45deg, #5CDB95, lightgrey, #5CDB95, lightgrey);
-      /* background: url('./home-background.png'); */
       background-size: 100% 100%;
       animation: gradient 45s ease infinite;
       height: 30rem;
@@ -51,7 +49,7 @@ html, body {
 .carousel-item > p {
     text-align: center;
     display: inline-block;
-    width:100%;
+    width: 100%;
     height: 100%;
     background-color: transparent;
     color: #EDF5E1;
@@ -87,7 +85,7 @@ html, body {
 
 .carousel {
     background-color: #282828;
-    height: 16%;
+    height: 10.3rem;
 }
 
 .homepage-league-name {

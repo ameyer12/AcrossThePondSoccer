@@ -21,7 +21,7 @@ export const getLiveScores = async () => {
 
 export const getPremierLeagueTopScorers = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=39&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=39&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -41,7 +41,7 @@ export const getPremierLeagueTopScorers = async () => {
 
 export const getPremierLeagueTopAssisters = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=39&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=39&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -61,7 +61,7 @@ export const getPremierLeagueTopAssisters = async () => {
     
 export const getLaLigaTopScorers = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=140&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=140&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -81,7 +81,7 @@ export const getLaLigaTopScorers = async () => {
 
 export const getLaLigaTopAssisters = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=140&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=140&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -101,7 +101,7 @@ export const getLaLigaTopAssisters = async () => {
 
 export const getBundesligaTopScorers = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=78&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=78&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -121,7 +121,7 @@ export const getBundesligaTopScorers = async () => {
 
 export const getBundesligaTopAssisters = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=78&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=78&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -141,7 +141,7 @@ export const getBundesligaTopAssisters = async () => {
 
 export const getSerieATopScorers = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=135&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=135&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -161,7 +161,7 @@ export const getSerieATopScorers = async () => {
 
 export const getSerieATopAssisters = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=135&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=135&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -181,7 +181,7 @@ export const getSerieATopAssisters = async () => {
 
 export const getLigue1TopScorers = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=61&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topscorers?league=61&season=2024', 
             {
             method: 'GET',
             headers: {
@@ -201,7 +201,7 @@ export const getLigue1TopScorers = async () => {
 
 export const getLigue1TopAssisters = async () => {
     try {
-        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=61&season=2023', 
+        const response = await fetch('https://api-football-v1.p.rapidapi.com/v3/players/topassists?league=61&season=2024', 
             {
             method: 'GET',
             headers: {
